@@ -7,6 +7,17 @@ Enables [positional voice audio](https://wiki.mumble.info/wiki/Positional-Audio)
 >  
 > If someone is NOT using Positional Audio, you would hear that audio source always from the same spot, equally loud from each of your stereo speakers.
 
+## Why would I want this mod?
+
+I'm sure you're already using Discord to chat with other players. But, positional voice audio doesn't only solve the problem of crowded voice channels; it makes the game more fun and immersive:
+
+* Navigation: Shout, "Over here!", and it actually means something. Never again lose your friends on a large island because you looked at your inventory for a few seconds.
+* Immersion: The characters are talking, not voices in your head.
+* Roleplay: Mutter to yourself while tending the crops. Whisper to those close to you. Scream for help. Become your character.
+* Story-telling: Split up your group and regale each other with tales of adventure.
+
+Sure, you have to install Mumble and find a server like we're re-living the '90s. It'll be worth it.
+
 ## Setup
 
 ### Mumble Setup
