@@ -1,13 +1,13 @@
 using UnityEngine;
 using System.IO.MemoryMappedFiles;
 
-[ModTitle("MumbleLink")] // The mod name.
-[ModDescription("Allows positional voice audio via Mumble")] // Short description for the mod.
-[ModAuthor("Jeff Peterson")] // The author name of the mod.
+[ModTitle("Mumble Link")] // The mod name.
+[ModDescription("Allows positional voice audio via Mumble.")] // Short description for the mod.
+[ModAuthor("yaks")] // The author name of the mod.
 [ModIconUrl("https://www.logolynx.com/images/logolynx/01/01a38e1b8398e89861c608fe1e7d8d19.jpeg")] // An icon for your mod. Its recommended to be 128x128px and in .jpg format.
 [ModWallpaperUrl("Banner Url")] // A banner for your mod. Its recommended to be 330x100px and in .jpg format.
-[ModVersionCheckUrl("Version File Url")] // This is for update checking. Needs to be a .txt file with the latest mod version.
-[ModVersion("0.1")] // This is the mod version.
+[ModVersionCheckUrl("https://raftmodding.com/api/v1/mods/mumble-link/version.txt")] // This is for update checking. Needs to be a .txt file with the latest mod version.
+[ModVersion("v0.2")] // This is the mod version.
 [RaftVersion("10.07")] // This is the recommended raft version.
 [ModIsPermanent(false)] // If your mod add new blocks, new items or just content you should set that to true. It loads the mod on start and prevents unloading.
 public class MumbleLink : Mod
@@ -21,7 +21,7 @@ public class MumbleLink : Mod
     public void Start()
     {
         tick = 0;
-        RConsole.Log("MumbleLink has been loaded!");
+        RConsole.Log("Mumble Link has been loaded!");
         RConsole.Log("Starting connection to Mumble...");
         GetMumble();
     }
@@ -52,8 +52,8 @@ public class MumbleLink : Mod
         mum.Write(4, tick + 1);
 
         // Plugin name
-        WriteString(44, "Raft Link");
-        WriteString(1620, "Raft Mod to enable positional audio.");
+        WriteString(44, "Raft Mumble Link");
+        WriteString(1620, "Raft mod to enable positional audio.");
 
         // uid
         var uid = player.steamID.ToString();
